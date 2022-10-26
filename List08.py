@@ -6,4 +6,6 @@ def main(fruits):
     Returns:
         list: return answer
     """
-    return
+    fruits.pop('apple')
+    return fruits
+print(main(['apple','nok','anor','apple','apple']))
