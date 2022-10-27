@@ -6,6 +6,13 @@ def main(fruits):
     Returns:
         list: return answer
     """
-    fruits.pop('apple')
+    i=0
+    
+    
+    while i<len(fruits):
+        if fruits[i]=='apple':
+           fruits.pop(i)
+           i-=1
+        i+=1 
     return fruits
-print(main(['apple','nok','anor','apple','apple']))
+print(main(['apple','apple','nok','anor','apple','apple']))
